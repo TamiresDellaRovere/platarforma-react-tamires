@@ -14,6 +14,8 @@ import { Secao2 } from './components/SecaoHome/Secao2';
 import { Secao3 } from './components/SecaoHome/Secao3';
 import { EditaUsuario } from './pages/EditaUsuario/EditaUsuario';
 import { Perfil } from './pages/Perfil/Perfil';
+import { Pokemon } from './pages/Pokemon/Pokemon';
+import { Herois } from './pages/Herois/Herois';
 
 
 
@@ -53,9 +55,13 @@ function App() {
             se apagar o :id e coloca 45616762, ele ainda vai encontrar a pagina EditaUsuário
             */}
 
+            <Route path="/usuario/perfil/:id" element={<Perfil />} />  
+
             <Route path="/login" element={<Login />} />
 
-            <Route path="/usuario/perfil/:id" element={<Perfil />} />
+            <Route path="/pokemon" element={<Pokemon />} />
+
+            <Route path="/herois" element={<Herois />} />
 
             <Route path="*" element={<NotFound />} />
 
